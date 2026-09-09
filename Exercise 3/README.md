@@ -13,14 +13,13 @@ You must use the **Exercise 3 folder in your existing forked repository** and re
 ## Data Story
 
 ### Audience
+The audience is Australian consumers who are planning to purchase a television and want to understand how their choice may effect electricity consumption
 
-The target audience for this visualisation includes:
+### Main Question
+How does television screen size affect annual energy consumption?
 
-- Consumers interested in **energy-efficient televisions**
-- Policy makers and regulators interested in **energy consumption trends**
-- Researchers studying **energy efficiency in consumer electronics**
-
-These audiences are interested in understanding how **television energy consumption varies across models, sizes, and technologies**, and how these factors influence overall energy usage.
+### Purpose
+The visualization aims to help consumers understand whether choosing a larger television is likely to result in higher yearly electricity use.
 
 ### Story Overview
 
@@ -47,11 +46,24 @@ The dataset was provided as part of the course materials.
 
 ### Data Processing
 
-Before creating visualisations, the dataset was processed to ensure it was suitable for analysis. This included:
+The original dataset contained 4,724 television records.
 
-- Cleaning missing or inconsistent values
-- Selecting relevant attributes for visualisation
-- Organising the data into formats suitable for web visualisation
+The data was processed in KNIME before being used for the visualisations.
+
+The processing included:
+
+- selecting attributes relevant to the analysis
+- converting television screen size into inches
+- grouping televisions into Small, Medium and Large screen-size categories
+- checking the analytical variables for missing values
+- identifying duplicate television records
+- removing 256 duplicate record
+
+No rows were removed during the missing-value processing stage for the variables required for the analysis.
+
+After duplicate removal, the cleaned dataset contained 4,468 records.
+
+This cleaned dataset was exported as `tvcleaned.csv` and is used for the Exercise 3 analysis.
 
 ### Privacy
 
@@ -81,13 +93,15 @@ This project follows ethical data visualisation practices by:
 
 ## AI Declaration
 
-Artificial Intelligence (AI) tools may have been used to assist with aspects of this assignment, such as:
+Generative AI tools were used to assist with aspects of this exercise, including:
 
-- Generating example code
-- Improving code structure
-- Assisting with documentation writing
+- discussing possible data-story questions
+- reviewing the structure of the README
+- providing guidance on KNIME data-cleaning steps
+- assisting with explanations and documentation
+- providing guidance for website development
 
-All AI-generated assistance was reviewed, modified where necessary, and integrated responsibly into the project.
+AI-generated suggestions were reviewed and modified before being included in the project. The data processing, interpretation and final submitted work were checked by the student.
 
 ---
 
