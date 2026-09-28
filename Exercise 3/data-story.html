@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appliance Energy Consumption | TV Data Story</title>
+
+    <link rel="stylesheet" href="../Exercise%200.2/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/story.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo-link">
+                <img
+                    src="assets/img/PowerIcon.png"
+                    alt="Power logo"
+                    class="logo"
+                >
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../Exercise%200.2/televisions.html">Televisions</a></li>
+                <li><a href="../Exercise%200.2/about.html">About Us</a></li>
+                <li><a href="data-story.html" class="active" aria-current="page">Data Story</a></li>
+                <li><a href="../Exercise%204/Exercise%204.1/index.html">Exercise 4.1</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="story-hero">
+            <div class="container">
+                <p class="story-eyebrow">Exercise 3 · TV energy use</p>
+                <h1>Do bigger TVs use more electricity?</h1>
+                <p class="story-lede">
+                    For Australian shoppers comparing televisions, screen size is a useful clue.
+                    In this dataset, larger TVs have higher labelled annual energy use on average.
+                </p>
+                <a href="#results" class="button">See the comparison</a>
+            </div>
+        </section>
+
+
+        <section class="content-section">
+            <div class="container story-content">
+
+                <section class="story-section" id="results">
+                    <h2>The average rises with screen size</h2>
+                    <p>
+                        In the cleaned dataset, average labelled annual energy use was 748.02
+                        kWh for large TVs, 381.87 kWh for medium TVs and 127.09 kWh for small TVs.
+                        The average is higher in each larger screen-size group.
+                    </p>
+
+                    <figure class="story-figure">
+                        <img
+                            src="assets/img/tv-energy-by-size-category.png"
+                            alt="Bar chart of mean labelled annual energy use: large TVs 748.02 kWh per year, medium TVs 381.87 kWh per year, and small TVs 127.09 kWh per year."
+                        >
+                        <figcaption>
+                            Mean labelled energy consumption in kilowatt-hours per year for
+                            each screen-size category in the cleaned dataset.
+                        </figcaption>
+                    </figure>
+
+                    <p class="story-takeaway">
+                        <strong>What this means for shoppers:</strong> choosing a smaller screen
+                        is associated with lower labelled annual use in this set of products.
+                        Compare the kWh/year figure on the specific TV label before deciding.
+                    </p>
+                </section>
+
+
+                <section class="story-section">
+                    <h2>Screen size is a strong clue, not the whole answer</h2>
+                    <p>
+                        A scatterplot can show the relationship across individual TVs. It also
+                        makes the variation between models of similar sizes easier to see.
+                        Technology and model design matter too.
+                    </p>
+
+                    <figure class="story-figure">
+                        <img
+                            src="assets/img/tv-screen-size-energy-scatter.png"
+                            alt="KNIME scatter plot of TV screen size in inches and labelled annual energy consumption in kilowatt-hours per year. The points generally rise as screen size increases."
+                        >
+                        <figcaption>
+                            Each point represents a TV in the dataset. Larger screens generally
+                            have higher labelled annual energy use, although models of similar
+                            sizes can still vary considerably.
+                        </figcaption>
+                    </figure>
+
+                    <div class="story-note">
+                        <h3>How to read the annual figure</h3>
+                        <p>
+                            The kWh/year figure is an estimate based on standard usage assumptions.
+                            The Australian Government says TV label calculations assume 10 hours
+                            of use and 14 hours in standby per day. Your actual use depends on
+                            viewing time, settings and the electricity tariff on your bill.
+                        </p>
+                        <p class="story-sources">
+                            Source: <a href="https://www.energy.gov.au/households/energy-rating" target="_blank" rel="noopener noreferrer">Australian Government, Energy ratings</a>.
+                        </p>
+                    </div>
+                </section>
+
+
+                <section class="story-section">
+                    <h2>About the data</h2>
+                    <p>
+                        The dataset was provided with the course materials and cleaned in KNIME.
+                        It began with 4,724 records. After duplicate records were removed, 4,468
+                        entries remained. Screen sizes were converted from centimetres to inches
+                        and assigned to the small, medium and large groups shown above.
+                    </p>
+                    <p>
+                        This is a snapshot of listed products, so it may not include every model
+                        currently available. The results describe an association across the
+                        products in this dataset; they do not guarantee the energy use of an
+                        individual television or reflect how every household uses one.
+                    </p>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Lai Bei Ren | Appliance Energy Consumption Website</p>
+        <p class="ai-text">Generative AI was used to assist with planning and development guidance for this website.</p>
+    </footer>
+
+</body>
+
+</html>

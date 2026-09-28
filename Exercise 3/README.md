@@ -13,26 +13,24 @@ You must use the **Exercise 3 folder in your existing forked repository** and re
 ## Data Story
 
 ### Audience
-The audience is Australian consumers who are planning to purchase a television and want to understand how their choice may effect electricity consumption
+The audience is Australian consumers who are comparing televisions and want to understand how screen size relates to annual electricity use.
 
 ### Main Question
 How does television screen size affect annual energy consumption?
 
 ### Purpose
-The visualization aims to help consumers understand whether choosing a larger television is likely to result in higher yearly electricity use.
+The visualizations help consumers compare the average labelled energy use of small, medium and large TVs, and see how energy use varies between individual models.
 
 ### Story Overview
 
-This visualisation explores patterns in **TV energy consumption** across different television models and specifications.
+The story uses two KNIME visualizations made from the cleaned course dataset:
 
-The goal is to help viewers understand:
+- A bar chart compares mean labelled annual energy use across small, medium and large TVs.
+- A scatterplot compares screen size in inches with labelled annual energy use for individual TVs.
 
-- How energy consumption varies between television models
-- The relationship between **screen size and power consumption**
-- How **energy efficiency ratings** impact energy usage
-- Trends that may help consumers choose more **energy-efficient televisions**
+In this dataset, average labelled annual energy use was 748.02 kWh for large TVs, 381.87 kWh for medium TVs and 127.09 kWh for small TVs. The scatterplot also shows that models of similar sizes can have different energy-use figures. These results help shoppers compare products, but they do not predict the exact electricity use of a particular household.
 
-The website presents these insights through visualisations and explanatory text that guide the viewer through the data.
+The website presents both charts with captions and context for readers.
 
 ---
 
@@ -56,8 +54,7 @@ The processing included:
 - converting television screen size into inches
 - grouping televisions into Small, Medium and Large screen-size categories
 - checking the analytical variables for missing values
-- identifying duplicate television records
-- removing 256 duplicate record
+- identifying and removing 256 duplicate television records
 
 No rows were removed during the missing-value processing stage for the variables required for the analysis.
 
@@ -93,26 +90,10 @@ This project follows ethical data visualisation practices by:
 
 ## AI Declaration
 
-Generative AI tools were used to assist with aspects of this exercise, including:
-
-- discussing possible data-story questions
-- reviewing the structure of the README
-- providing guidance on KNIME data-cleaning steps
-- assisting with explanations and documentation
-- providing guidance for website development
-
-AI-generated suggestions were reviewed and modified before being included in the project. The data processing, interpretation and final submitted work were checked by the student.
+Generative AI was used to inspect the cleaned dataset, provide guidance for creating the KNIME visualizations, draft and edit explanatory text, and build the Exercise 3 webpage. The charts were created in KNIME by the student and added to the page as screenshots. The student should review the figures and interpretation before submission.
 
 ---
 
 ## Website Storytelling
 
-The website has been updated to communicate a **data-driven story** based on the TV energy consumption dataset.
-
-The website includes:
-
-- Visualisations that present key insights from the dataset
-- Text explanations that help readers understand the meaning of the visualisations
-- Context that connects the data to real-world implications
-
-The aim is to guide the viewer through the data in a way that is **informative, engaging, and easy to understand**.
+The Exercise 3 folder has its own home page and Data Story page. It reuses shared files and links to pages in Exercise 0.2, leaving the original Exercise 0.2 files unchanged. The [data-story.html](data-story.html) page presents screenshots of both completed charts with captions and supporting text.

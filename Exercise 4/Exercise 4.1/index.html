@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4.1 | SVG House and Garden</title>
+    <link rel="stylesheet" href="../../Exercise%200.2/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/svg-house.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../../Exercise%203/index.html" class="logo-link">
+                <img src="../../Exercise%200.2/assets/img/PowerIcon.png" alt="Power logo" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../../Exercise%203/index.html">Home</a></li>
+                <li><a href="../../Exercise%200.2/televisions.html">Televisions</a></li>
+                <li><a href="../../Exercise%200.2/about.html">About Us</a></li>
+                <li><a href="../../Exercise%203/data-story.html">Data Story</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Exercise 4.1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="svg-hero">
+            <div class="svg-container">
+                <p class="svg-eyebrow">Exercise 4.1 · Draw SVGs</p>
+                <h1>Changing an SVG House and Garden</h1>
+                <p>
+                    I started with an existing SVG illustration and changed its colours and
+                    positions. Compare the original with my edited version below.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="svg-container">
+                <h2>Before and after</h2>
+                <div class="svg-comparison">
+                    <figure class="svg-card">
+                        <img src="assets/img/svg-house-before.png" alt="Original SVG house and garden, with a green lawn, yellow sun, and tree on the left.">
+                        <figcaption><strong>Before:</strong> the original house and garden SVG.</figcaption>
+                    </figure>
+                    <figure class="svg-card">
+                        <img src="assets/img/svg-house-after.png" alt="Modified SVG house and garden, with a tomato-red lawn, blue sun, and yellow tree moved to the right.">
+                        <figcaption><strong>After:</strong> the edited version with changed colours and positions.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section svg-details">
+            <div class="svg-container">
+                <h2>What I changed</h2>
+                <ul>
+                    <li>Changed the grass, sun, and tree colours.</li>
+                    <li>Moved the tree from the left side of the picture to the right.</li>
+                    <li>Moved the chimney from the right side of the roof to the left.</li>
+                    <li>Kept the two windows in a shared group and positioned them with <code>translate</code>.</li>
+                </ul>
+                <p>
+                    The SVG uses a coordinate area of 800 by 500. The origin is at the top-left;
+                    x-coordinates increase to the right and y-coordinates increase downward.
+                    The <code>fill</code> and <code>stroke</code> values control colour, while
+                    coordinates control position.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lai Bei Ren | Exercise 4.1</p>
+    </footer>
+
+    <script src="../../Exercise%200.2/assets/js/script.js"></script>
+</body>
+
+</html>

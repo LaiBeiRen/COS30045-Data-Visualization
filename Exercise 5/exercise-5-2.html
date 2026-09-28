@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.2 | Scatter Plot and Line Chart</title>
+    <link rel="stylesheet" href="../Exercise%200.2/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/d3-chart.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="../Exercise%200.2/assets/img/PowerIcon.png" alt="Power logo" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../Exercise%200.2/televisions.html">Televisions</a></li>
+                <li><a href="../Exercise%200.2/about.html">About Us</a></li>
+                <li><a href="exercise-5-1.html">Exercise 5.1</a></li>
+                <li><a href="exercise-5-2.html" class="active" aria-current="page">Exercise 5.2</a></li>
+                <li><a href="exercise-5-3.html">Exercise 5.3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Exercise 5.2: Scatter Plot and Line Chart</h1>
+                <p>Explore average Australian electricity spot prices from 1998 to 2024.</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <h2>Average Spot Price ($ per MWh)</h2>
+                <p>The dots show each year's average price, and the line connects the values across time.</p>
+                <p id="line-chart-status" class="chart-status" role="status">Loading spot price data...</p>
+                <div id="line-chart" class="responsive-svg-container" aria-label="Scatter plot and line chart of average Australian electricity spot prices from 1998 to 2024"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lai Bei Ren | Appliance Energy Consumption Website</p>
+        <p class="ai-text">Generative AI was used to assist with planning and development guidance for this website.</p>
+    </footer>
+
+    <script src="../Exercise%200.2/assets/js/script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="assets/js/line-chart.js"></script>
+</body>
+</html>

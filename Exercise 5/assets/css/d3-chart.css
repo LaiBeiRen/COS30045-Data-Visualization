@@ -1,0 +1,62 @@
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+}
+
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.axis text {
+    fill: #222;
+    font-size: 13px;
+}
+
+.axis path,
+.axis line {
+    stroke: #777;
+}
+
+.bar {
+    fill: green;
+}
+
+.value-label,
+.axis-label {
+    fill: #222;
+    font-size: 13px;
+}
+
+.chart-status {
+    min-height: 1.5em;
+    color: #16433a;
+}
+
+.chart-note {
+    color: #40544e;
+    font-size: 0.95rem;
+}
+
+.line {
+    stroke: green;
+    stroke-width: 2px;
+}
+
+.dot {
+    fill: green;
+}
+
+.donut-label {
+    fill: #222;
+    font-size: 13px;
+    font-weight: 600;
+    pointer-events: none;
+    text-transform: capitalize;
+}
+

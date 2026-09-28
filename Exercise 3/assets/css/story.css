@@ -1,0 +1,133 @@
+/* Small page-specific styles for the Exercise 3 data story. */
+
+.story-hero {
+    padding: 72px 20px 68px;
+    background-color: #edf7f2;
+    text-align: center;
+}
+
+.story-hero .container {
+    max-width: 900px;
+}
+
+.story-eyebrow {
+    margin-bottom: 12px;
+    color: #1d7d51;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.story-hero h1 {
+    margin-bottom: 15px;
+    font-size: clamp(2.2rem, 5vw, 3.25rem);
+    line-height: 1.15;
+}
+
+.story-hero .story-lede {
+    max-width: 740px;
+    margin: 0 auto 26px;
+    font-size: 1.15rem;
+}
+
+.story-content {
+    max-width: 1000px;
+}
+
+.story-section {
+    margin-top: 58px;
+}
+
+.story-section:first-child {
+    margin-top: 0;
+}
+
+.story-section h2 {
+    margin-bottom: 12px;
+}
+
+.story-figure {
+    margin: 26px 0 18px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d5dfdc;
+    border-radius: 8px;
+}
+
+.story-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.screenshot-slot {
+    min-height: 290px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f8f7;
+    border: 2px dashed #93aa9d;
+    border-radius: 6px;
+    color: #52635d;
+    text-align: center;
+}
+
+.screenshot-slot p:last-child {
+    margin-bottom: 0;
+}
+
+.screenshot-slot-title {
+    color: #16352f;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.story-figure figcaption {
+    margin-top: 12px;
+    color: #52635d;
+    font-size: 0.95rem;
+}
+
+.story-takeaway {
+    margin-top: 22px;
+    padding: 18px 20px;
+    background-color: #edf7f2;
+    border-left: 4px solid #26a269;
+    border-radius: 4px;
+}
+
+.story-note {
+    margin-top: 18px;
+    padding: 18px 20px;
+    background-color: #f5f8f7;
+    border-radius: 8px;
+}
+
+.story-note p:last-child {
+    margin-bottom: 0;
+}
+
+.story-sources {
+    font-size: 0.92rem;
+}
+
+.story-sources a {
+    color: #1d7d51;
+}
+
+@media (max-width: 700px) {
+    .story-hero {
+        padding: 55px 20px;
+    }
+
+    .story-section {
+        margin-top: 42px;
+    }
+
+    .story-figure {
+        padding: 12px;
+    }
+}
