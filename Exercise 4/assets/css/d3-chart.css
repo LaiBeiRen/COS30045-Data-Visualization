@@ -1,0 +1,24 @@
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+}
+
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.chart-status {
+    min-height: 1.5em;
+    color: #16433a;
+}
+
+.chart-note {
+    color: #40544e;
+    font-size: 0.95rem;
+}
