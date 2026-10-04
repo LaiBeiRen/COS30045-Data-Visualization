@@ -45,7 +45,7 @@ const drawBarChart = data => {
     innerChart.append("text")
         .attr("class", "axis-label")
         .attr("x", -margin.left)
-        .attr("y", -10)
+        .attr("y", -24)
         .attr("text-anchor", "start")
         .text("Energy Consumption (kWh)");
 

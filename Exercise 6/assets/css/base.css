@@ -1,0 +1,14 @@
+/* Reuse the existing website design. */
+@import url("../../../Exercise%200.2/assets/css/style.css");
+.exercise-jumps { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.exercise-jumps a { padding: 8px 16px; border: 1px solid #d5dfdc; border-radius: 6px; background: white; color: #16352f; }
+#chart-status { color: #16433a; }
+.chart-note { color: #40544e; font-size: .95rem; }
+
+#filters_screen { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.filter { min-width: 80px; padding: 10px 16px; font: 600 16px Arial, sans-serif; color: #fff; background: #236354; border: 2px solid #236354; border-radius: 4px; cursor: pointer; transition: background-color .2s; }
+.filter:hover { background: #164538; }
+.filter.active { background: #d9eee5; color: #16352f; }
+.filter:focus-visible { outline: 3px solid #9a5d00; outline-offset: 3px; }
+#filter-status { color: #16433a; }
+@media (prefers-reduced-motion: reduce) { .filter { transition: none; } }

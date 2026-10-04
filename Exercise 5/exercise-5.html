@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise 5 | All Work</title>
+<link rel="stylesheet" href="../Exercise%200.2/assets/css/style.css">
+<link rel="stylesheet" href="assets/css/d3-chart.css">
+<link rel="stylesheet" href="assets/css/exercise-collection.css"></head>
+<body><header><nav class="navbar"><a class="logo-link" href="index.html"><img class="logo" src="../Exercise%200.2/assets/img/PowerIcon.png" alt="Power logo"></a><ul class="nav-links">
+<li><a href="index.html">Home</a></li><li><a href="../Exercise%203/data-story.html">Data Story</a></li><li><a href="exercise-5.html" class="active" aria-current="page">Exercise 5</a></li><li><a href="../Exercise%204/Exercise%204.1/index.html">Exercise 4.1</a></li><li><a href="../Exercise%206/exercise-6.html">Exercise 6</a></li></ul></nav></header>
+<main><section class="page-header"><div class="container"><h1>Exercise 5: Bar, Line and Donut Charts</h1><p>All exercise work, results and explanations in one place.</p>
+<nav class="exercise-jumps" aria-label="Jump to exercise"><a href="#exercise-5-1">5.1</a><a href="#exercise-5-2">5.2</a><a href="#exercise-5-3">5.3</a></nav></div></section>
+<section class="content-section exercise-work" id="exercise-5-1">
+            <div class="container"><h2>Exercise 5.1: Vertical Bar Chart with Axes</h2>
+                <h3>Energy Consumption (kWh)</h3>
+                <p>Each bar shows the mean labelled energy consumption for one screen technology.</p>
+                <p class="chart-note">This chart uses the provided Exercise 5.1 dataset, which contains mean energy consumption for 55-inch TVs by screen technology.</p>
+                <p id="chart-status" class="chart-status" role="status">Loading chart data...</p>
+                <div id="bar-chart" class="responsive-svg-container" aria-label="Vertical bar chart of average energy consumption by TV screen technology"></div>
+            <h3>Explanation</h3><p>The band scale positions the screen technologies; the linear scale maps mean annual energy use to bar height. The data are sorted from highest to lowest. In this supplied 55-inch TV table, LED has the highest mean. Labels show rounded values.</p><a class="back-top" href="#">Back to top</a></div></section><section class="content-section exercise-work" id="exercise-5-2">
+            <div class="container"><h2>Exercise 5.2: Scatter Plot and Line Chart</h2>
+                <h3>Average Spot Price ($ per MWh)</h3>
+                <p>The dots show each year's average price, and the line connects the values across time.</p>
+                <p id="line-chart-status" class="chart-status" role="status">Loading spot price data...</p>
+                <div id="line-chart" class="responsive-svg-container" aria-label="Scatter plot and line chart of average Australian electricity spot prices from 1998 to 2024"></div>
+            <h3>Explanation</h3><p>Each dot represents one year, and the line connects the values in chronological order. The supplied average excludes Tasmania and Snowy and uses the four other regional columns. Prices are measured in dollars per MWh.</p><a class="back-top" href="#">Back to top</a></div></section><section class="content-section exercise-work" id="exercise-5-3">
+            <div class="container"><h2>Exercise 5.3: Donut Chart</h2>
+                <h3>TV Models by Screen Size Category</h3>
+                <p>Each slice shows the share of TV models in one screen-size category.</p>
+                <p id="donut-chart-status" class="chart-status" role="status">Loading TV size counts...</p>
+                <div id="donut-chart" class="responsive-svg-container" aria-label="Donut chart showing counts of small, medium and large TV models"></div>
+            <h3>Explanation</h3><p>The slices represent model counts, not energy consumption or sales. The supplied counts are large 1,352, medium 2,386 and small 770. D3 calculates each slice angle from its share of the total, and positions its label inside the slice.</p><a class="back-top" href="#">Back to top</a></div></section></main><footer><p>&copy; 2026 Lai Bei Ren | Appliance Energy Consumption Website</p><p class="ai-text">Generative AI was used to assist with planning and development guidance for this website.</p></footer>
+<script src="https://d3js.org/d3.v7.min.js"></script><script type="module" src="assets/js/main.js"></script><script type="module" src="assets/js/line-chart.js"></script><script type="module" src="assets/js/donut-chart.js"></script></body></html>

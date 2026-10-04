@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 | All Work</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/visualisation.css">
+    <script defer src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="assets/js/load-data.js"></script>
+    <script defer src="assets/js/shared-constants.js"></script>
+    <script defer src="assets/js/interactions.js"></script>
+    <script defer src="assets/js/histogram.js"></script>
+    <script defer src="assets/js/scatterplot.js"></script>
+</head>
+<body>
+<header><nav class="navbar">
+    <a class="logo-link" href="index.html"><img class="logo" src="../Exercise%200.2/assets/img/PowerIcon.png" alt="Power logo"></a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="../Exercise%205/exercise-5.html">Exercise 5</a></li>
+        <li><a class="active" aria-current="page" href="exercise-6.html">Exercise 6</a></li>
+    </ul>
+</nav></header>
+<main>
+    <section class="page-header"><div class="container">
+        <h1>Exercise 6: TV Energy Consumption</h1>
+        <p>All Exercise 6 work and explanations in one place.</p>
+        <nav class="exercise-jumps" aria-label="Jump to exercise"><a href="#exercise-6-1">6.1 Histogram</a><a href="#exercise-6-2">6.2 Filters</a><a href="#exercise-6-3">6.3 Scatterplot</a><a href="#exercise-6-4">6.4 Tooltips</a></nav>
+    </div></section>
+    <section class="content-section" id="exercise-6-1"><div class="container">
+        <h2>Exercise 6.1: Histogram</h2>
+        <h3>Energy Consumption for Different TV Screen Types and Sizes</h3>
+        <p>TVs vary considerably in energy consumption. This histogram groups TV records into energy-use intervals and counts the records in each interval.</p>
+        <p id="chart-status" role="status">Loading TV data...</p>
+        <div id="histogram" class="responsive-svg-container"></div>
+        <p class="chart-note">All valid energy-consumption records are included. The highest value is 2,652 kWh/year; its bin contains only one record, so its bar is very short on this frequency scale.</p>
+        <h3>Explanation</h3>
+        <p>The horizontal axis shows labelled annual energy consumption in kWh/year. The vertical axis shows frequency: the number of TV records in each bin. The chart uses automatic D3 bins, rather than a separate bar for every TV.</p>
+       
+        
+    </div></section>
+    <section class="content-section" id="exercise-6-2"><div class="container">
+        <h2>Exercise 6.2: Filters</h2>
+        <h3>TV Energy Consumption by Screen Technology</h3>
+        <p>Select a screen technology to explore its energy-consumption distribution. Select All to restore the complete dataset.</p>
+        <div id="filters_screen" role="group" aria-label="Filter by screen technology"></div>
+        <p id="filter-status" role="status">Loading filter data...</p>
+        <div id="filtered-histogram" class="responsive-svg-container"></div>
+        <h3>Explanation</h3>
+        <p>The buttons filter records by screen technology. The bin boundaries and both axis scales stay fixed across selections, allowing direct comparison of frequencies. Only one filter is active at a time.</p>
+        <p>The bars change over 500 milliseconds using cubic easing. Short transitions make changes easy to follow; longer transitions can slow exploration. Without transitions, updates are immediate but changes can be harder to track. Cubic easing starts and ends smoothly, while linear easing moves at a constant rate. Animation is disabled when reduced motion is requested.</p>
+        <a href="#">Back to top</a>
+    </div></section>
+    <section class="content-section" id="exercise-6-3"><div class="container">
+        <h2>Exercise 6.3: Scatterplot</h2>
+        <h3>Energy Consumption by Star Rating</h3>
+        <p>Each point represents one TV record. Its horizontal position shows the star rating, its vertical position shows labelled annual energy consumption, and its colour identifies screen technology.</p>
+        <p id="scatterplot-status" role="status">Loading scatterplot data...</p>
+        <div id="scatterplot" class="responsive-svg-container"></div>
+        <h3>Explanation</h3>
+        <p>Both axes use linear scales. Different colour hues distinguish screen technologies, and the legend shows the colour assigned to each category. Semi-transparent circles help reveal overlap, although densely packed records can still hide one another.</p>
+        <p>The chart shows an association between star rating and energy use, rather than proving that star rating alone determines consumption. TV records also differ in screen size and technology.</p>
+        <a href="#">Back to top</a>
+    </div></section>
+    <section class="content-section" id="exercise-6-4"><div class="container">
+        <h2>Exercise 6.4: Tooltips</h2>
+        <h3>Explore TV Screen Size</h3>
+        <p>Hover over a point to display the TV screen size in inches. Move the pointer away to hide the tooltip. Colours identify screen technology.</p>
+        <p id="tooltip-scatterplot-status" role="status">Loading scatterplot data...</p>
+        <div id="tooltip-scatterplot" class="responsive-svg-container"></div>
+        <h3>Explanation</h3>
+        <p>The tooltip contains a rounded rectangle and centred text. When the pointer enters a circle, the text changes to that record's screen size and the tooltip appears near the point. When the pointer leaves, the tooltip is hidden. The tooltip does not intercept pointer events, so it does not interfere with the circles underneath.</p>
+        <a href="#">Back to top</a>
+    </div></section>
+</main>
+<footer><p>&copy; 2026 Lai Bei Ren | Data Visualisation Week 6</p><p class="ai-text">Generative AI was used to assist with planning and development guidance for this website.</p></footer>
+</body>
+</html>

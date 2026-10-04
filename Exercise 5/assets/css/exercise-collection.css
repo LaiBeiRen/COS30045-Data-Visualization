@@ -1,0 +1,22 @@
+html { scroll-behavior: smooth; }
+.exercise-work { scroll-margin-top: 20px; border-bottom: 1px solid #d5dfdc; }
+.exercise-work h3 { margin-top: 24px; }
+.exercise-work ul { padding-left: 24px; margin-bottom: 20px; }
+.exercise-jumps { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.exercise-jumps a { padding: 8px 16px; background: white; color: #16352f; border: 1px solid #b8cec6; border-radius: 5px; text-decoration: none; }
+.image-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 24px 0; }
+.image-comparison img { width: 100%; height: auto; display: block; border: 1px solid #d5dfdc; }
+figcaption { margin-top: 12px; }
+.compact-svg { max-width: 300px; margin-left: 0; }
+.brand-chart { max-width: 600px; margin-left: 0; }
+#chart-4-5 { max-width: 1100px; }
+#demo-4-2 svg { display: block; max-width: 400px; width: 100%; border: 1px solid #d5dfdc; }
+.data-table { max-height: 460px; overflow: auto; margin: 20px 0; }
+.data-table table { border-collapse: collapse; width: 100%; }
+.data-table th, .data-table td { border: 1px solid #d5dfdc; padding: 10px 16px; text-align: left; }
+.data-table th { background: #eaf3ef; }
+.data-table caption { text-align: left; font-weight: bold; margin-bottom: 10px; }
+.back-top { display: inline-block; margin-top: 15px; color: #166452; }
+.navbar, .nav-links { flex-wrap: wrap; }
+.hero .button { margin: 6px; }
+@media (max-width: 640px) { .image-comparison { grid-template-columns: 1fr; } }
